@@ -1,0 +1,10 @@
+# Resumen Tema 10: Mapas de calor
+
+## (a) Herramienta más rápida
+La que me pareció más rápida fue pheatmap. Con pocas líneas ya tenía el mapa con los números, sin reestructurar los datos como en ggplot2 y sin hacer bucles ni poner etiquetas a mano como en el heatmap manual del Tema 9. Seaborn también fue rápido, pero pheatmap me dio el resultado con menos código.
+
+## (b) Agrupamiento de pheatmap
+Sí, el agrupamiento cambió el orden de mis variables. Sin agrupar salían como en mi tabla: [orden_sin_agrupar]. Con el agrupamiento quedaron así: [orden_agrupado]. Lo que mostró es que [variable A] y [variable B] quedaron juntas porque tienen una correlación de [valor], o sea que se comportan parecido.
+
+## (c) Matriz de correlación completa
+[pega aquí la tabla de abajo]

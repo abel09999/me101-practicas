@@ -1,0 +1,2 @@
+git add tema10/
+git commit -m "Añade los siete archivos de la actividad de heatmaps del Tema 10"

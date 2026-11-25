@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Colegio Guadalupe (San Sebastián, Cusco)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.919,
+          -13.53
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "UNSAAC (Cusco)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9568,
+          -13.5254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Plaza de Urubamba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.1166,
+          -13.305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Instituto de Salvación (Madre de Dios)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3611,
+          -12.8361
+        ]
+      }
+    }
+  ]
+}

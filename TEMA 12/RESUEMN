@@ -1,0 +1,30 @@
+# Resumen Tema 12 — Datos Geoespaciales
+
+**Estudiante:** Abel Gamboa Molina
+**CURSO:** ME101 · Programación Estadística y Visualización de Datos
+
+## (a) Lugares que elegí y por qué
+
+Elegí cuatro lugares reales de mi región que conozco o que tienen que ver conmigo:
+
+1. **Colegio Guadalupe (San Sebastián, Cusco):** donde estudié el primero de secundaria.
+2. **UNSAAC (Cusco):** mi universidad.
+3. **Plaza de Urubamba:** un lugar conocido del Valle Sagrado, cerca del Cusco.
+4. **Instituto de Salvación (Madre de Dios):** un lugar de la selva, bastante lejos de los otros tres.
+
+Los escogí para tener algunos lugares muy cerca entre sí (dentro de la ciudad del Cusco) y otros más separados, y así ver bien cómo cambian las distancias.
+
+## (b) Par más cercano y más lejano
+
+Usé mi función `distancia_haversine`, que calcula la distancia en línea recta sobre la superficie de la Tierra.
+
+- **Par más cercano:** Colegio Guadalupe y UNSAAC, a unos **4.12 km**.
+- **Par más lejano:** UNSAAC e Instituto de Salvación, a unos **100.17 km**.
+
+Son distancias "a vuelo de pájaro". Por carretera serían mayores, sobre todo hacia Salvación.
+
+## (c) Pregunta de cierre sobre CRS
+
+Si le paso mis lugares a un compañero que usa un GPS en UTM sin decirle en qué CRS están, puede pensar que mis números son metros y no grados. Un valor como -13.53 no tiene sentido como coordenada UTM, y las coordenadas UTM, que son números muy grandes, tampoco servirían en mi código de Haversine. Los puntos saldrían en lugares equivocados y las distancias estarían mal.
+
+Lo visto sobre EPSG sirve para esto: cada código identifica un sistema de coordenadas. Yo debería avisarle que mis datos están en EPSG:4326 (latitud/longitud), y él indicarme su zona UTM (el Cusco queda en la 19S, EPSG:32719) para convertirlos antes de usarlos juntos.
